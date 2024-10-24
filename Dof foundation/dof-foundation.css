@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.dof-fond-img {
+  background-image: url("../images/dof-foundation img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 158%;
+  min-height: 602px;
+}
+.diary-entries-h2 {
+  min-height: 464px;
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+  font-size: 2.75rem;
+  color: white;
+  padding: 10px 2px 12px;
+}
+.w-95 {
+  width: 95%;
+}
+
+.m-center {
+  margin: 0px auto;
+}
+.dof-content-img {
+  width: 250px;
+  height: 250px;
+  margin: 0px auto;
+}
+.dof-content-img img {
+  width: 100%;
+  height: 100%;
+}
+.dof-content-text {
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+}
+.dof-content-text h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+.dof-content-text p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+@media (max-width: 480px) {
+  .dof-fond-img {
+    background-image: url("../mobile images/FOundation.png");
+    min-height: 741px;
+  }
+  .diary-entries-h2 {
+    font-size: 33px;
+    padding-top: 70px;
+  }
+  .dof-head {
+    align-items: end;
+  }
+  .full-sc {
+    display: none;
+  }
+  .mobile-para {
+    display: block;
+    width: 93%;
+    margin: 0 auto;
+  }
+  .mobile-para {
+    font-size: 18px;
+  }
+  .foundation-txt {
+    width: 90%;
+  }
+  .podcast-heading {
+    font-weight: 600;
+    font-size: 21px;
+  }
+  .diary-entries-h2 {
+    font-size: 22px;
+  }
+}
+

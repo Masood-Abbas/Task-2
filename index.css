@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.home-header-img {
+  background-image: url("./images/The-story.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 6%;
+  min-height: 580px;
+}
+
+.home-heading h2 {
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+  font-size: 3.75rem;
+  color: white;
+  padding: 20px 0px;
+}
+h2 {
+  overflow-wrap: break-word;
+}
+.nametag {
+  position: absolute;
+  opacity: 0;
+}
+.nametag:nth-of-type(1) {
+  animation-name: fade1;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+.nametag:nth-of-type(2) {
+  animation-name: fade2;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  margin-bottom: 20px;
+}
+@keyframes fade1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+}
+50% {
+    opacity: 0;
+}
+60% {
+    opacity: 1;
+}
+90% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+.w-95 {
+  width: 95%;
+}
+.m-center {
+  margin: 0px auto;
+}
+.about-section-img {
+  background-image: url("./images/homepage-image-about-section.png");
+  min-height: 590px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home-about-data {
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  padding-top: 63px;
+  padding-bottom: 15px;
+}
+.home-about-content {
+  width: 40%;
+  padding-top: 125px;
+}
+.home-about-content h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.explore-container {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.explore-heading {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.explore-cards {
+  display: flex;
+  gap: 20px;
+  padding: 0px 10px 80px;
+}
+.explore-card {
+  overflow: hidden;
+  width: 23%;
+  border: 1px solid #ccc;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.card-image {
+  background-image: url("./images/Pocast-page-main-image.png");
+  background-size: cover;
+  width: 545px;
+  height: 249px;
+  background-position: -175px 0px;
+}
+.diary-entries-img {
+  background-image: url("./images/Diary-entries-page-main-image.png");
+}
+.upcoming-book-img {
+  background-image: url("./images/Upcoming-book.png");
+}
+.foundation-explore-img {
+  background-image: url("./images/dof-foundation img.png");
+}
+.card-content {
+  padding: 20px;
+}
+.card-content h3 {
+  color: red;
+  font-size: 30px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.card-content p {
+  max-width: 81%;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+#explore-heading {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.contact-bg-img {
+  background-image: url("./images/Form-image.png");
+  min-height: 590px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-container {
+  padding-top: 75px;
+  width: 70%;
+  margin: 0 auto;
+}
+.contact-form {
+  text-align: center;
+  width: 50%;
+  background-color: #fff;
+  padding: 50px 0px 10px;
+}
+.contact-p {
+  color: red !important;
+}
+.contact-p {
+  font-weight: 600;
+}
+.popup-content h4,
+.contact-form h4 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.popup-content h4 {
+  margin-bottom: 40px;
+}
+.popup-content p,
+.contact-form form {
+  padding: 20px 0px;
+  width: 88%;
+  margin: 0 auto;
+}
+.popup-content p {
+  padding: 0px;
+}
+.popup-content .form-control {
+  margin-bottom: 40px;
+}
+.form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+.popup-content form input,
+.contact-form form input {
+  width: 100%;
+  border: none;
+  line-height: 1.8;
+  outline: none;
+}
+.popup-content form textarea,
+.contact-form form textarea {
+  outline: none;
+  width: 100%;
+  border: none;
+}
+textarea::placeholder {
+  font-family: Arial, sans-serif;
+}
+.home-about-mobile-img {
+  display: none;
+}
+/* animation */
+
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+}
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 800px) {
+  .card-image {
+    width: 400px !important;
+    height: 149px !important;
+  }
+  .card-content h3 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 786px) {
+  .home-header-img {
+    background-image: url("./mobile images/The-Story.png");
+    background-size: cover;
+    min-height: 410px !important;
+  }
+  
+  .home-heading h2 {
+    font-size: 2.1rem;
+    min-height: 230px;
+  }
+  .home-about-mobile-img {
+    display: block;
+  }
+  .popup-content {
+    margin-top: 5px;
+    width: 100% !important;
+  }
+  .popup-content h4 {
+    font-size: 24px;
+  }
+  .about-section-img {
+    background-image: url("");
+  }
+  .home-about-content {
+    color: black;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 0px;
+  }
+  .explore-cards {
+    flex-wrap: wrap;
+  }
+  .explore-card {
+    width: 48%;
+    opacity: 0; /* Start invisible */
+  }
+
+  .explore-card.in-view {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Move into position */
+  }
+
+  .contact-bg-img {
+    background-image: url("");
+    background-color: black;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .home-about-mobile-img {
+    width: 80%;
+  }
+  .home-about-mobile-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .home-about-data {
+    width: 95%;
+  }
+  .home-about-content {
+    padding: 0 0 20px;
+  }
+  .home-heading h2{
+    min-height: 223px;
+  }
+  .explore-heading {
+    font-size: 33px;
+  }
+  
+  .explore-card {
+    width: 100%;
+  }
+  .contact-p {
+    font-size: 20px !important;
+  }
+  .contact-form h4 {
+    font-size: 22px;
+  }
+  .contact-container {
+    width: 88%;
+  }
+  .home-about-mobile-img {
+    width: 100%;
+  }
+}

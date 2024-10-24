@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.upcoming-bg-img {
+  background-image: url("../images/Upcoming-book.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 158%;
+  min-height: 602px;
+}
+.diary-entries-h2 {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+  font-size: 2.75rem;
+  color: white;
+  padding: 10px 2px 12px;
+}
+.w-95 {
+  width: 95%;
+}
+.m-center {
+  margin: 0px auto;
+}
+.upcoming-content {
+  padding-top: 60px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+.upcoming-book-content {
+  width: 87%;
+  padding-bottom: 40px;
+}
+.upcoming-heading h2 {
+  margin-bottom: 60px;
+  color: red;
+  font-size: 46px;
+}
+.upcomming-context-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.upcoming-txt {
+  text-align: start;
+}
+.upcoming-txt h3 {
+  font-size: 30px;
+  margin-bottom: 0.5rem;
+}
+.upcoming-txt p {
+  font-size: 20px;
+}
+@media (max-width: 786px) {
+  .upcomming-context-data {
+    flex-wrap: wrap;
+  }
+  .upcoming-txt {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .upcoming-bg-img {
+    background-image: url("../mobile images/Upcoming-book.png");
+    background-size: cover;
+    min-height: 720px;
+  }
+  .dof-head {
+    align-items: end;
+  }
+  .dof-head h2 {
+    font-size: 36px;
+  }
+  .upcomming-context-data {
+    flex-wrap: wrap;
+  }
+  .upcoming-book-img-2 {
+    width: inherit;
+  }
+  .upcoming-book-img-2 img {
+    width: 100%;
+  }
+  .upcoming-txt {
+    text-align: center;
+  }
+  .f-start {
+    margin-bottom: 4px !important;
+    padding-left: 0px !important;
+}
+}

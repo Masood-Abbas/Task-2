@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.diary-entries-img {
+  background-image: url("../images/Diary-entries-page-main-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 607px;
+}
+.diary-entries-h2 {
+  min-height: 464px;
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+  font-size: 2.75rem;
+  color: white;
+  padding: 10px 2px 12px;
+}
+.dairy-enteries-content {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 29px;
+  padding-top: 105px;
+  margin-bottom: 25px;
+
+}
+.diary-entries-data {
+  display: none;
+  width: 31%;
+  height: 31%;
+}
+.diary-entries-imag {
+  width: 100%;
+}
+.diary-entries-imag img {
+  width: 100%;
+  height: 218px;
+  object-fit: cover;
+  object-position: 0px -43px;
+  margin-bottom: 8px;
+}
+.diary-entries-txt h4 {
+  color: red;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.diary-entries-txt p {
+  line-height: 1.3;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.diary-link a {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 2.5px 4.33px 15px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 5px;
+}
+
+.diary-link a:hover {
+  background-color: #cc0000;
+}
+.fa-arrow-right {
+  font-size: 15px;
+}
+.bottom-btn {
+  width: 14%;
+  margin: 0 auto;
+}
+.btn-pad a {
+  padding: 13px 35px;
+  margin-bottom: 20px;
+}
+.btn-pad .fa-arrow-right {
+  font-size: 18px;
+}
+@media (max-width: 1083px) {
+  .diary-entries-data {
+    width: 47%;
+  }
+}
+.bottom-btn {
+  padding-top: 17px;
+  width: 25%;
+}
+@media (max-width: 480px) {
+  .diary-entries-img {
+    background-image: url("../mobile images/Diary-entries.png") !important;
+    min-height: 741px;
+  }
+  .diary-entries-h2 h2{
+    font-size: 2.9rem;
+  }
+  .diary-entries-h2 {
+    justify-content: center !important;
+    padding-top: 190px !important;
+  }
+  .diary-entries-data {
+    width: 93%;
+    margin: 0 auto;
+  }
+  .diary-entries-txt h4 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+  .diary-link a {
+    padding: 16px 23px;
+  }
+  .bottom-btn {
+    width: 44%;
+  }
+}
+@media (max-width: 390px) {
+  .diary-entries-img {
+      min-height: 497px;
+  }
+}

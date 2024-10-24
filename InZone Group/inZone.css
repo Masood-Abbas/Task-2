@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.inzone-bgimg {
+  background-image: url("../images/InZone-group.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 545px;
+}
+.inzone-heading h2 {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+  font-size: 3.75rem;
+  color: white;
+  padding: 20px 0px;
+}
+.group-section {
+  padding: 30px;
+}
+.group-img {
+  width: 23%;
+  height: auto;
+  margin: 0 auto;
+  padding: 38px 0px;
+}
+.group-content {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.group-content h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.group-content p {
+  font-size: 19px;
+}
+.inzone-logo-image {
+  background-image: url("../images/logos-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 470px;
+}
+.w-95 {
+  width: 95%;
+}
+.m-center {
+  margin: 0 auto;
+}
+.podcast-heading {
+  text-align: center;
+  padding: 50px 0px;
+}
+.podcast-heading p {
+  color: red;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.podcast-heading h3 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.f-video img {
+  width: 100%;
+  height: auto;
+}
+.profiles-video {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.f-video {
+  border: 1px solid rgba(175, 173, 173, 0.76);
+  border-radius: 0px 0px 13px 13px;
+}
+@media (max-width: 786px) {
+  .inzone-bgimg {
+    background-image: url("../mobile images/InZone-group.png");
+    min-height: 745px;
+    background-position: 59%;
+  }
+  .inzone-logo-image{
+    background-image: url("../mobile images/logos-image-mobile.png");
+    min-height: 818px;
+  }
+  .f-video{
+    width: 47%;
+  }
+  .group-section {
+    padding: 2px;
+}
+}
+@media (max-width: 480px) {
+
+  .inzone-bgimg {
+    background-image: url("../mobile images/InZone-group.png");
+    min-height: 745px;
+    background-position: 59%;
+  }
+  .inzone-content-heading {
+    display: none;
+  }
+  .inzone-heading h2 {
+    font-size: 2.75rem;
+  }
+  .full-sc {
+    display: none;
+  }
+  .mobile-para {
+    display: block;
+    width: 93%;
+    margin: 0 auto;
+  }
+  .mobile-para {
+    font-size: 18px;
+  }
+  .group-img {
+    width: 65%;
+  }
+  .group-content {
+    width: 93%;
+  }
+  .group-content p {
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .inzone-logo-image{
+    background-image: url("../mobile images/logos-image-mobile.png");
+    background-size: cover;
+    min-height: 500px;
+  }
+  .podcast-heading h3 {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+.podcast-heading{
+  padding-bottom: 25px;
+}
+}
+@media (max-width: 390px){
+  .inzone-logo-image{
+    min-height: 380px;
+  }
+
+}

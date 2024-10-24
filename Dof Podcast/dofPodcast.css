@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.bg-image {
+  background-image: url("../images/Pocast-page-main-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.pad-top {
+  padding: 95px 30px;
+}
+.dof-heading {
+  padding: 50px 0px;
+  color: white;
+  font-size: 54px;
+}
+.w-95 {
+  width: 95%;
+}
+.m-center {
+  margin: 0px auto;
+}
+
+.icon {
+  width: 30%;
+  margin: 24px auto 0px;
+  padding: 32px;
+}
+.dof-content-heading {
+  width: 80%;
+  margin: 0 auto;
+}
+.dof-content-heading h3 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+.content-txt {
+  margin-bottom: 25px;
+}
+.content-txt p {
+  text-align: center;
+  font-size: 23px;
+}
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 45px 0px;
+}
+.profile-video {
+  display: none;
+  width: 32%;
+  border: 1px solid #ccc;
+  border-radius: 0px 0px 10px 10px;
+}
+.profile-video img {
+  width: 100%;
+}
+.s-y-icon {
+  height: 40px !important;
+  width: 40px !important;
+}
+.watch-video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 12px;
+}
+.watch-video .social-icon {
+  display: flex;
+}
+.watch-link a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+.more-video{
+  display: none;
+}
+.diary-entries {
+  background-image: url("../images/Diary-enteries-section-for-all-pages.png");
+  background-size: cover;
+  background-position: 0 -6px;
+  border-top: 1px solid #d3c0c0;
+  margin-bottom: -7px;
+}
+.head-p {
+  color: red;
+}
+.diray-content {
+  margin-bottom: 30px;
+}
+.diray-content h4 {
+  font-size: 38px;
+}
+.diary-container {
+  width: 52%;
+  padding: 58px 45px 0px;
+}
+.diary-imag {
+  background-image: url("../images/diary-section-img.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 350px;
+  height: 153px;
+}
+.diary-imag-2 {
+  background-image: url("../images/diary-section-img2.jpeg");
+}
+.diary-imag img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.diary-data {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.diary-data-txt h4 {
+  color: red;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+.mobile-para {
+  display: none;
+}
+.diary-data-txt p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.diary-link a {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 2.5px 4.33px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.diary-link a:hover {
+  background-color: #cc0000;
+}
+
+.fa-arrow-right {
+  font-size: 16px;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.center-button a {
+  padding: 13px 26px;
+  font-size: 15px;
+}
+.f-start {
+  justify-content: flex-start;
+}
+.mob-para {
+  display: none;
+}
+@media (max-width: 1083px) {
+  .profile-video {
+    width: 48%;
+  }
+  .diary-container {
+    width: 55%;
+    padding: 43px 23px;
+  }
+  .diary-data {
+    gap: 15px;
+  }
+  .diary-imag {
+    width: 400px;
+  }
+}
+@media (max-width: 950px) {
+  .diary-imag {
+    width: 670px;
+    height: 175px;
+  }
+  .diary-data-txt h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 786px) {
+  .lap-src {
+    display: none;
+  }
+  .mob-para {
+    display: block;
+  }
+  .bg-image {
+    background-image: url("../mobile images/Podcast.png");
+    background-size: cover;
+    min-height: 720px;
+  }
+  .diary-entries {
+    background-image: url("");
+  }
+  .profiles-video {
+    flex-wrap: wrap;
+  }
+  .profiles {
+    padding-bottom: 21px;
+  }
+  .dof-heading {
+    font-size: 45px;
+    padding-top: 206px;
+  }
+  .icon {
+    width: 65%;
+  }
+  .center-button {
+    display: flex;
+    margin-bottom: 17px;
+  }
+  .diary-entries {
+    width: 93%;
+    margin: 0 auto;
+    border-top: 1px solid #d3c0c0;
+  }
+  .diary-container {
+    width: 100%;
+    padding: 25px 0px;
+  }
+  .f-video {
+    width: 100%;
+  }
+  .right {
+    display: block;
+    color: #ccc;
+  }
+  .footer-bottom {
+    display: none;
+  }
+  .diray-content {
+    text-align: center;
+  }
+  .head-p {
+    font-weight: 600;
+    font-size: 27px;
+  }
+  .diary-imag {
+    width: 200px;
+    height: 125px;
+  }
+  .diary-data-txt h4 {
+    font-size: 24px;
+  }
+  .diary-data {
+    width: 88%;
+    gap: 15px;
+}
+}
+
+@media (max-width: 480px) {
+  .bg-image {
+    background-image: url("../mobile images/Podcast.png");
+    background-size: cover;
+    min-height: 720px;
+  }
+  .dof-heading {
+    font-size: 45px;
+    padding-top: 206px;
+  }
+  .lap-src {
+    display: none;
+  }
+  .mob-para {
+    display: block;
+  }
+  .icon {
+    width: 65%;
+  }
+  .profiles {
+    justify-content: center;
+  }
+  .profile-video {
+    width: 93%;
+  }
+  .profile-video img {
+    width: 100%;
+  }
+  .dof-content-heading {
+    display: none;
+  }
+  .full-sc {
+    display: none;
+  }
+  .mobile-para {
+    display: block;
+    width: 93%;
+    margin: 0 auto;
+  }
+  .mobile-para {
+    font-size: 18px;
+  }
+  .diary-entries {
+    width: 93%;
+    margin: 0 auto;
+    border-top: 1px solid #d3c0c0;
+  }
+  .diary-container {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .diray-content {
+    text-align: center;
+  }
+  .head-p {
+    font-weight: 600;
+    font-size: 27px;
+  }
+  .diary-data {
+    width: 100%;
+    gap: 9px;
+    margin-bottom: 30px;
+  }
+  .diary-data-txt h4 {
+    font-size: 18px;
+  }
+  .diary-data-txt p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .profiles-video {
+    flex-wrap: wrap;
+    margin-bottom: 19px;
+  }
+  .center-button {
+    display: flex;
+    margin-bottom: 17px;
+    padding-left: 12px;
+  }
+  .diary-imag {
+    width: 438px;
+    height: 152px;
+  }
+}
+
+@media (max-width: 380px) {
+  .diary-data-txt p {
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+}
