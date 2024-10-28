@@ -16,6 +16,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
@@ -47,7 +51,7 @@
           <!-- pope up -->
 
           <div class="popup" id="popupForm">
-            <div class="popup-content ">
+            <div class="popup-content">
               <span class="close-btn" id="closePopup">&times;</span>
               <p class="head-p contact-p">Collaborations</p>
               <h4>Connect with Tariq</h4>
@@ -81,8 +85,6 @@
             </div>
           </div>
 
-
-
           <div class="home-heading w-95 m-center">
             <h2 class="nametag" id="Mainheading">Muhammad</h2>
             <h2 class="nametag" id="Subheading">Tariq</h2>
@@ -114,7 +116,10 @@
                 </p>
               </div>
               <div class="home-about-mobile-img">
-                <img src="./images/homepage-image-about-section-for-mobile.png" alt="about image">
+                <img
+                  src="./images/homepage-image-about-section-for-mobile.png"
+                  alt="about image"
+                />
               </div>
             </div>
           </div>
@@ -124,13 +129,11 @@
         <div class="explore-section">
           <div class="explore-container">
             <div class="explore-heading">
-              <h3 id="explore-heading" >Explore More</h3>
+              <h3 id="explore-heading">Explore More</h3>
             </div>
             <div class="explore-cards">
               <div class="explore-card">
-                <div class="card-image podcast-img">
-                  
-                </div>
+                <div class="card-image podcast-img"></div>
                 <div class="card-content">
                   <h3>Podcast</h3>
                   <p>
@@ -141,9 +144,7 @@
               </div>
 
               <div class="explore-card">
-                <div class="card-image diary-entries-img">
-                  
-                </div>
+                <div class="card-image diary-entries-img"></div>
                 <div class="card-content">
                   <h3>Diary Entries</h3>
                   <p>
@@ -154,8 +155,7 @@
               </div>
 
               <div class="explore-card">
-                <div class="card-image upcoming-book-img">
-                </div>
+                <div class="card-image upcoming-book-img"></div>
                 <div class="card-content">
                   <h3>Book</h3>
                   <p>
@@ -166,7 +166,7 @@
               </div>
 
               <div class="explore-card">
-                <div class="card-image foundation-explore-img" >
+                <div class="card-image foundation-explore-img">
                   <!-- <img src="./images/dof-foundation img.png" alt="" /> -->
                 </div>
                 <div class="card-content">
@@ -177,6 +177,68 @@
                   </p>
                 </div>
               </div>
+            </div>
+
+            <!-- mobile-slider -->
+            <div class="swiper mySwiper mobile-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="explore-card margin">
+                    <div class="card-image podcast-img"></div>
+                    <div class="card-content">
+                      <h3>Podcast</h3>
+                      <p>
+                        Tariq shares raw conversations with dynamic
+                        entrepreneurs and...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="explore-card margin">
+                    <div class="card-image podcast-img"></div>
+                    <div class="card-content">
+                      <h3>Podcast</h3>
+                      <p>
+                        Tariq shares raw conversations with dynamic
+                        entrepreneurs and...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="explore-card margin">
+                    <div class="card-image podcast-img"></div>
+                    <div class="card-content">
+                      <h3>Podcast</h3>
+                      <p>
+                        Tariq shares raw conversations with dynamic
+                        entrepreneurs and...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="explore-card margin">
+                    <div class="card-image podcast-img">
+                      <img
+                        src="https://muhammadtariq.org/wp-content/uploads/2024/10/episode10.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="card-content">
+                      <h3>Podcast</h3>
+                      <p>
+                        Tariq shares raw conversations with dynamic
+                        entrepreneurs and...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <br />
             </div>
           </div>
         </div>
@@ -196,20 +258,25 @@
                   <img src="./images/dof-podcast.png" alt="Vido image" />
                   <div class="watch-video">
                     <div class="watch-link">
-                      <a href="https://www.youtube.com/watch?v=eNmsusKTfBA&ab_channel=DiaryOfAFounder"
+                      <a
+                        href="https://www.youtube.com/watch?v=eNmsusKTfBA&ab_channel=DiaryOfAFounder"
                         >Watch Episode
                         <i class="fa fa-arrow-right"></i>
                       </a>
                     </div>
                     <div class="social-icon">
-                      <a href="https://open.spotify.com/episode/6CqnINfYiYdibKvGZsFghr?si=Si0D2OFkS8a6Goc5vr_1Kg">
+                      <a
+                        href="https://open.spotify.com/episode/6CqnINfYiYdibKvGZsFghr?si=Si0D2OFkS8a6Goc5vr_1Kg"
+                      >
                         <img
                           src="./images/spotify-icon.png"
                           alt="Spotify"
                           class="s-y-icon"
                         />
                       </a>
-                      <a href="https://www.youtube.com/watch?v=eNmsusKTfBA&ab_channel=DiaryOfAFounder">
+                      <a
+                        href="https://www.youtube.com/watch?v=eNmsusKTfBA&ab_channel=DiaryOfAFounder"
+                      >
                         <img
                           src="./images/youtube-icon.png"
                           alt="youtube"
@@ -219,7 +286,7 @@
                     </div>
                   </div>
                 </div>
-    
+
                 <div class="f-video">
                   <img src="./images/teach.png" alt="Vido image" />
                   <div class="watch-video">
@@ -230,7 +297,9 @@
                       </a>
                     </div>
                     <div class="social-icon">
-                      <a href="https://open.spotify.com/episode/58mt3480FHQjAT8dmV8BYc?si=I4A88D5ARRuS0XEC21ssGQ">
+                      <a
+                        href="https://open.spotify.com/episode/58mt3480FHQjAT8dmV8BYc?si=I4A88D5ARRuS0XEC21ssGQ"
+                      >
                         <img
                           src="./images/spotify-icon.png"
                           alt="Spotify"
@@ -247,7 +316,7 @@
                     </div>
                   </div>
                 </div>
-    
+
                 <div class="f-video">
                   <img src="./images/ofter.png" alt="Vido image" />
                   <div class="watch-video">
@@ -258,7 +327,9 @@
                       </a>
                     </div>
                     <div class="social-icon">
-                      <a  href="https://open.spotify.com/episode/1aOmef19rK6TGBYrXQwMvT?si=JBjW2nh_TyemFxrhNeLl6w">
+                      <a
+                        href="https://open.spotify.com/episode/1aOmef19rK6TGBYrXQwMvT?si=JBjW2nh_TyemFxrhNeLl6w"
+                      >
                         <img
                           src="./images/spotify-icon.png"
                           alt="Spotify"
@@ -296,16 +367,19 @@
                 <h4>Diary Entries</h4>
               </div>
               <div class="diary-data">
-                <div class="diary-imag">
-                  <img src="./images/1720443576072.jpeg" alt="diarydata img" />
-                </div>
+                <div class="diary-imag"></div>
                 <div class="diary-data-txt">
                   <h4>RIDICULOUS, SHOCKING...</h4>
-                  <p>
+                  <p class="lap-src">
                     Diary of a Founder #01: That's how I felt at the time.
                     Turning myself from a lawyer to an entrepreneur started off
                     as my biggest challenge. With no experience in designing
                     or...
+                  </p>
+                  <p class="mob-para">
+                    How many meals do you really need in a day? Diary of a
+                    Founder #38 I had always wrestled with figuring out my
+                    meals—what to...
                   </p>
                   <div class="diary-link">
                     <a href="#"
@@ -316,19 +390,19 @@
                 </div>
               </div>
               <div class="diary-data">
-                <div class="diary-imag">
-                  <img
-                    src="./images/Diary-of-a-Founder-8.jpeg"
-                    alt="diarydata img"
-                  />
-                </div>
+                <div class="diary-imag diary-imag-2"></div>
                 <div class="diary-data-txt">
                   <h4>RIDICULOUS, SHOCKING...</h4>
-                  <p>
+                  <p class="lap-src">
                     Diary of a Founder #01: That's how I felt at the time.
                     Turning myself from a lawyer to an entrepreneur started off
                     as my biggest challenge. With no experience in designing
                     or...
+                  </p>
+                  <p class="mob-para">
+                    How many meals do you really need in a day? Diary of a
+                    Founder #38 I had always wrestled with figuring out my
+                    meals—what to...
                   </p>
                   <div class="diary-link">
                     <a href="#"
@@ -339,7 +413,7 @@
                 </div>
               </div>
               <div class="diary-link center-button f-start">
-                <a href="./Dairy Entity/Dairy.html"
+                <a href="../Dairy Entity/Dairy.html"
                   >Load More
                   <i class="fa fa-arrow-right"></i>
                 </a>
@@ -347,15 +421,13 @@
             </div>
           </div>
         </section>
-
         <!-- contact area -->
 
         <div class="contact-area">
           <div class="contact-bg-img">
             <div class="contact-container">
               <div class="contact-form">
-
-                <p class="head-p  contact-p">Collaborations</p>
+                <p class="head-p contact-p">Collaborations</p>
                 <h4>Connect with Tariq</h4>
                 <form action="#">
                   <div class="form-control">
@@ -368,7 +440,8 @@
                     <input type="tel" placeholder="Your Mobile" />
                   </div>
                   <div class="form-control">
-                    <textarea cols
+                    <textarea
+                      cols
                       name="message"
                       id="message"
                       cols="40"
@@ -415,6 +488,8 @@
         </footer>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./slider.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
