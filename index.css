@@ -61,19 +61,19 @@ h2 {
 @keyframes fade2 {
   0% {
     opacity: 0;
-}
-50% {
+  }
+  50% {
     opacity: 0;
-}
-60% {
+  }
+  60% {
     opacity: 1;
-}
-90% {
+  }
+  90% {
     opacity: 1;
-}
-100% {
+  }
+  100% {
     opacity: 0;
-}
+  }
 }
 .w-95 {
   width: 95%;
@@ -227,9 +227,12 @@ textarea::placeholder {
 .home-about-mobile-img {
   display: none;
 }
+
+/* slider */
+.mobile-swiper {
+  display: none !important;
+}
 /* animation */
-
-
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -238,7 +241,7 @@ textarea::placeholder {
     -moz-transform: translateX(-10px);
     -ms-transform: translateX(-10px);
     -o-transform: translateX(-10px);
-}
+  }
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -265,12 +268,18 @@ textarea::placeholder {
   }
 }
 @media (max-width: 786px) {
+  .explore-cards {
+    display: none;
+  }
+  .mobile-swiper {
+    display: block !important;
+  }
   .home-header-img {
     background-image: url("./mobile images/The-Story.png");
     background-size: cover;
     min-height: 410px !important;
   }
-  
+
   .home-heading h2 {
     font-size: 2.1rem;
     min-height: 230px;
@@ -294,14 +303,6 @@ textarea::placeholder {
     padding-bottom: 20px;
     padding-top: 0px;
   }
-  .explore-cards {
-    flex-wrap: wrap;
-  }
-  .explore-card {
-    width: 48%;
-    opacity: 0; /* Start invisible */
-  }
-
   .explore-card.in-view {
     opacity: 1; /* Fully visible */
     transform: translateX(0); /* Move into position */
@@ -320,6 +321,68 @@ textarea::placeholder {
   .home-about-mobile-img img {
     width: 100%;
   }
+  /* swiper */
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+  }
+  .margin {
+    margin: 10px;
+  }
+  .explore-heading {
+    transform: translateX(10px);
+    font-size: 33px;
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .card-content {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    transform: translateY(-150%) !important;
+    --swiper-theme-color: black;
+    -webkit-transform: translateY(-150%) !important;
+    -moz-transform: translateY(-150%) !important;
+    -ms-transform: translateY(-150%) !important;
+    -o-transform: translateY(-150%) !important;
+  }
+  .explore-card {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: none;
+  }
+  .swiper .card-image {
+    background-image: url("https://muhammadtariq.org/wp-content/uploads/2021/03/Pocast-page-main-image.png") !important;
+    width: auto;
+    background-position: right;
+    height: 239px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+  }
 }
 @media (max-width: 480px) {
   .home-about-data {
@@ -328,16 +391,13 @@ textarea::placeholder {
   .home-about-content {
     padding: 0 0 20px;
   }
-  .home-heading h2{
+  .home-heading h2 {
     min-height: 223px;
   }
   .explore-heading {
     font-size: 33px;
   }
-  
-  .explore-card {
-    width: 100%;
-  }
+
   .contact-p {
     font-size: 20px !important;
   }
@@ -350,4 +410,17 @@ textarea::placeholder {
   .home-about-mobile-img {
     width: 100%;
   }
+  .swiper-button-next:after,
+  .swiper-button-prev::after{
+    --swiper-navigation-size:24px
+  }
+  .card-content {
+    width: 100%;
+    padding: 20px 0px;
+}
+.swiper-button-prev,
+.swiper-button-next  {
+  --swiper-navigation-sides-offset:3px  
+}
+ 
 }
